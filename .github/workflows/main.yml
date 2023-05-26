@@ -22,7 +22,7 @@ jobs:
        - name: 'Run Cypress tests'
          env:
             CYPRESS_auth_username: ${{ secrets.AUTH_USERNAME }}
-#            CYPRESS_auth_username: 'testuser'
+            CYPRESS_auth_password: 'testpassword'
 #            AUTH_PASSWORD: ${{ secrets.AUTH_PASSWORD }}
 #            AUTH_USERNAME: 'Testadmin@gmail.com'
 #            AUTH_PASSWORD: 'TestAuth0Admin1234'
