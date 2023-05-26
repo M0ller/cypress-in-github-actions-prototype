@@ -15,16 +15,14 @@
 <script>
 
 export default {
-  ata() {
+  Data() {
     return {
       username: '',
       password: ''
     };
   },
   methods: {
-    login() {
-      // alert(`Username: ${this.username}\nPassword: ${this.password}`);
-      
+    login() {      
       if(this.username === "testuser" && this.password === "testpassword"){
         alert(`Login Success`);
         this.username = ""
