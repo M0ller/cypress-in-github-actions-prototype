@@ -5,7 +5,7 @@
   
   
   it('Use login', () => {
-    const username = Cypress.env('AUTH_USERNAME')
+    const username = Cypress.env('auth_username')
     cy.get('#username').type(username);
     cy.get('.login-btn').click();
     

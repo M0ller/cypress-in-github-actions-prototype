@@ -6,7 +6,7 @@ module.exports = defineConfig({
       // implement node event listeners here
     },
     env: {
-      AUTH_USERNAME: ""
+      auth_username: ""
     }
   },
 });
