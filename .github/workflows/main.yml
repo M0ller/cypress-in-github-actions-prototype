@@ -1,0 +1,28 @@
+﻿name: CY_Pipeline
+
+on:
+  
+  push:
+    branches:
+      - test-cypress
+
+jobs:
+  build:
+    
+    runs-on: ubuntu-latest
+    
+    steps:     
+      # Checkout git repo
+       - uses: actions/checkout@v2
+
+       - name: Install dependencies
+         run: npm install
+
+      # Run Cypress tests
+       - name: 'Run Cypress tests'
+#         env:
+#            AUTH_USERNAME: ${{ secrets.AUTH_USERNAME }}
+#            AUTH_PASSWORD: ${{ secrets.AUTH_PASSWORD }}
+#            AUTH_USERNAME: 'Testadmin@gmail.com'
+#            AUTH_PASSWORD: 'TestAuth0Admin1234'
+         run: npm run test
