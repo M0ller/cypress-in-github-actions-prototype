@@ -6,8 +6,8 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "cy-open": "cypress open",
-    "cy-run": "cypress run",
+    "cy:open": "cypress open",
+    "cy:run": "cypress run",
     "test": "concurrently --kill-others --success first \" npm run dev \" \" sleep 30 && npm run cy:run\""
   },
   "dependencies": {
