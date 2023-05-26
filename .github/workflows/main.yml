@@ -10,7 +10,7 @@ jobs:
   build:
     
     runs-on: ubuntu-latest
-    
+    environment: cypress_auth
     steps:     
       # Checkout git repo
        - uses: actions/checkout@v2
@@ -20,10 +20,10 @@ jobs:
 
       # Run Cypress tests
        - name: 'Run Cypress tests'
+  
          env:
             CYPRESS_auth_username: ${{ secrets.AUTH_USERNAME }}
-            CYPRESS_auth_password: 'testpassword'
-#            AUTH_PASSWORD: ${{ secrets.AUTH_PASSWORD }}
-#            AUTH_USERNAME: 'Testadmin@gmail.com'
-#            AUTH_PASSWORD: 'TestAuth0Admin1234'
+#            CYPRESS_auth_password: 'testpassword'
+            CYPRESS_auth_password: ${{ secrets.AUTH_PASSWORD }}
+
          run: npm run test
