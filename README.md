@@ -5,7 +5,8 @@ This is a prototype to test Cypress with github secrets in the pipeline.
 #### Prerequisites 
 Add the secrets in your github repository
 Github repository secrets:
-1. ![img.png](img.png)
+<img src="img.png">
+1. <img src="img.png">
 2. ![img_1.png](img_1.png)
 3. ![img_2.png](img_2.png)
 4. ![img_3.png](img_3.png)
