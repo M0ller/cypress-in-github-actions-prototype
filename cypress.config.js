@@ -5,8 +5,8 @@ module.exports = defineConfig({
     setupNodeEvents(on, config) {
       // implement node event listeners here
     },
-    env: {
-      AUTH_USERNAME: ""
-    }
+    // env: {
+    //   AUTH_USERNAME: ""
+    // }
   },
 });
