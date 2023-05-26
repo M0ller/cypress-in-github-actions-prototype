@@ -1,0 +1,23 @@
+{
+  "name": "vue-project",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "cy-open": "cypress open",
+    "cy-run": "cypress run",
+    "test": "concurrently --kill-others --success first \" npm run dev \" \" sleep 30 && npm run cy:run\""
+  },
+  "dependencies": {
+    "concurrently": "^8.0.1",
+    "vue": "^3.2.47",
+    "vue-router": "^4.1.6"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^4.0.0",
+    "cypress": "^12.13.0",
+    "vite": "^4.1.4"
+  }
+}
