@@ -71,6 +71,9 @@ In cypress config file: ```cypress.config.js```
 Then it can be used in your cypress e2e testing: ```cypress/e2e/login-test.cy.js```
 ![img_17.png](img_17.png)
 
+<br>
+When you push a change to your main branch, you will trigger github actions which you can find under the **Actions** tab. There you can see the cypress test running.
+
 ### using dependencies
 ```
 @vue/cli
