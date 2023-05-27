@@ -63,12 +63,12 @@ When using environment you need to specify it in your pipeline ```.github/workfl
 In order to pass the github secrets into your cypress environment. You need to add
 ```CYPRESS_``` and then your environment name.
 In pipeline: ```.github/workflows/main.yml``` <br><br>
-![img_15.png](img_15.png)<br>
+![img_15.png](images/img_15.png)<br>
 In cypress config file: ```cypress.config.js``` <br><br>
-![img_16.png](img_16.png)<br>
+![img_16.png](images/img_16.png)<br>
 
 Then it can be used in your cypress e2e testing: ```cypress/e2e/login-test.cy.js``` <br><br>
-![img_17.png](img_17.png)<br>
+![img_17.png](images/img_17.png)<br>
 
 <br>
 When you push a change to your main branch, you will trigger github actions which you can find under the **Actions** tab. There you can see the cypress test running.
